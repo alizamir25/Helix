@@ -26,13 +26,13 @@ function randomNumbers(min, max){
   const randomNum=Math.floor(Math.random()*(max-min+1))+min;
   return randomNum;
 }
-const button = document.getElementById("Button");
-button.addEventListener("click", () => {
-  radius = randomNumbers(50, 200);
-  heightPerTurn = randomNumbers(10, 60);
-  numTurns = randomNumbers(5, 15);
-  xTurn = Math.random() * 0.04 - 0.02;
-  yTurn = Math.random() * 0.04 - 0.02;
+const button=document.getElementById("Button");
+button.addEventListener("click",()=>{
+  radius=randomNumbers(50, 200);
+  heightPerTurn=randomNumbers(10, 60);
+  numTurns=randomNumbers(5, 15);
+  xTurn=Math.random()*0.04-0.02;
+  yTurn=Math.random()*0.04-0.02;
 });
 function windowResized(){
   createCanvas(windowWidth, windowHeight, WEBGL);
