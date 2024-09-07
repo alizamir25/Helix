@@ -9,15 +9,15 @@ function setup(){
 }
 function draw(){
   background("#152340");
-  rotateX(frameCount * xTurn);
-  rotateY(frameCount * yTurn);
+  rotateX(frameCount*xTurn);
+  rotateY(frameCount*yTurn);
   noFill();
   stroke("#fff");
   beginShape();
-  for (let angle = 0; angle < numTurns * TWO_PI; angle += 0.1) {
-    let x = cos(angle) * radius;
-    let y = sin(angle) * radius;
-    let z = (angle / TWO_PI) * heightPerTurn;
+  for (let angle=0; angle<numTurns*TWO_PI; angle+=0.1){
+    let x=cos(angle)*radius;
+    let y=sin(angle)*radius;
+    let z=(angle/TWO_PI)*heightPerTurn;
     vertex(x, y, z);
   }
   endShape();
