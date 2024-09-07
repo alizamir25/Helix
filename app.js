@@ -23,7 +23,7 @@ function draw(){
   endShape();
 }
 function randomNumbers(min, max){
-  const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+  const randomNum=Math.floor(Math.random()*(max-min+1))+min;
   return randomNum;
 }
 const button = document.getElementById("Button");
