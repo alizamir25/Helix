@@ -1,8 +1,8 @@
-let radius = 70;
-let heightPerTurn = 50;
-let numTurns = 10;
-let xTurn = -0.01;
-let yTurn = 0.01;
+let radius=70;
+let heightPerTurn=50;
+let numTurns=10;
+let xTurn=-0.01;
+let yTurn=0.01;
 function setup(){
   createCanvas(windowWidth, windowHeight, WEBGL);
   windowResized();
