@@ -4,12 +4,12 @@ let numTurns = 10;
 let xTurn = -0.01;
 let yTurn = 0.01;
 
-function setup() {
+function setup(){
   createCanvas(windowWidth, windowHeight, WEBGL);
   windowResized();
 }
 
-function draw() {
+function draw(){
   background("#152340");
   rotateX(frameCount * xTurn);
   rotateY(frameCount * yTurn);
@@ -26,7 +26,7 @@ function draw() {
   endShape();
 }
 
-function randomNumbers(min, max) {
+function randomNumbers(min, max){
   const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
   return randomNum;
 }
@@ -40,6 +40,6 @@ button.addEventListener("click", () => {
   yTurn = Math.random() * 0.04 - 0.02;
 });
 
-function windowResized() {
+function windowResized(){
   createCanvas(windowWidth, windowHeight, WEBGL);
 }
